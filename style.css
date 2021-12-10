@@ -9,6 +9,7 @@ body {
 .header {
   background-color: #222;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+  position: relative;
 }
 .header .nav-bar {
   position: relative;
@@ -22,6 +23,8 @@ body {
   width: 80%;
   height: 90px;
   margin: auto;
+  top: 0;
+  z-index: 9999;
 }
 
 .header .nav-bar .logo-wrapper {
@@ -59,4 +62,84 @@ body {
   color: #ea4f4c;
   border-bottom: 2px solid #ea4f4c;
   opacity: 1;
+}
+/* video control */
+.header .video-container {
+  width: 100%;
+  position: relative;
+
+  /* border: 1px solid #ea4f4c; */
+}
+.header .video-container video {
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.2;
+  width: 100%;
+  margin-top: -160px;
+  overflow: hidden;
+  object-fit: cover;
+  z-index: -1;
+}
+.services {
+  overflow: hidden;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  width: 100%;
+  height: 450px;
+  justify-content: space-around;
+  /* position: relative; */
+  background-color: #ea4f4c;
+  /* z-index: 9999; */
+}
+
+.services .container {
+  margin: 106.5px;
+  padding: 20px;
+}
+.service-title {
+  color: white;
+  text-align: center;
+  margin-top: -50px;
+}
+.service-title h1 {
+  font-family: "Times New Roman", Times, serif;
+  text-transform: uppercase;
+}
+.services p {
+  font-family: monospace;
+  font-size: 20px;
+  margin: 3px;
+}
+.flex-container {
+  display: flex;
+  padding: 20px;
+  height: 450px;
+  position: absolute;
+  /* border: 3px solid blue; */
+  margin-left: 40px;
+  margin-right: 60px;
+}
+.service-item {
+  background-color: #fdfafa;
+  margin: 10px;
+  padding: 20px;
+  font-size: 20px;
+  height: 330px;
+  border-radius: 5%;
+  text-align: center;
+}
+.box {
+  margin-bottom: 30px;
+  border: 4px solid rgb(78, 78, 78);
+  padding: 15px;
+  width: 33.33%;
+}
+ul {
+  list-style-type: none;
+}
+.service-text h3 {
+  padding: 10px;
+  margin: 8px;
 }
